@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Install xmllint
+    - name: Install python 2.7
       run: |
         sudo apt-add-repository universe
         sudo apt update
