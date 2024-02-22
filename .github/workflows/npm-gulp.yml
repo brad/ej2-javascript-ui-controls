@@ -15,7 +15,7 @@ jobs:
         node-version: [16.x, 18.x, 20.x]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install python 2.7
       run: |
         sudo apt-add-repository universe
