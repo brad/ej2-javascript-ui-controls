@@ -31,7 +31,6 @@ jobs:
       run: |
         cd controls/documenteditor
         npm install
-        npm install node-sass@^4.8.0
         npm run build
 
     - name: Test Document Editor
