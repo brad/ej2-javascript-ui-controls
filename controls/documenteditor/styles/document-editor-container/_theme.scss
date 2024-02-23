@@ -39,29 +39,29 @@
         }
         .e-de-char-fmt-btn-left button:not(:first-child) {
             border: 1px solid transparent;
-            border-left: 1px solid rgba($border-light);
+            border-left: 1px solid rgbaChange($border-light);
         }
         .e-de-ctnr-group-btn {
             .e-de-prop-font-button {
                 position: relative;
-                border: 1px solid transparent rgba($border-light);
+                border: 1px solid transparent rgbaChange($border-light);
                 border-right-width: 1px;
             }
             .e-de-prop-font-last-button {
                 position: relative;
-                border: 1px solid transparent rgba($border-light);
+                border: 1px solid transparent rgbaChange($border-light);
                 border-left-width: 1px;
             }
         }
         .e-de-ctnr-group-btn {
             .e-de-prop-indent-button {
                 position: relative;
-                border: 1px solid transparent rgba($border-light);
+                border: 1px solid transparent rgbaChange($border-light);
                 border-right-width: 1px;
             }
             .e-de-prop-indent-last-button {
                 position: relative;
-                border: 1px solid transparent rgba($border-light);
+                border: 1px solid transparent rgbaChange($border-light);
                 border-left-width: 1px;
             }
         }
@@ -223,12 +223,12 @@
         .e-de-char-fmt-btn-right button:not(:first-child),
         .e-de-char-fmt-btn-left button:not(:first-child), 
         .e-de-align-text button:not(:first-child) {
-            border-left: 1.7px solid rgba($border-light);
+            border-left: 1.7px solid rgbaChange($border-light);
             background: $de-prop-btn-bg-color;
         }
         .e-de-insert-del-cell button:not(:first-child) {
             &:not(.e-rtl) {
-                border-left: 1.7px solid rgba($border-light);
+                border-left: 1.7px solid rgbaChange($border-light);
             }
         }
         .e-de-ctnr-segment-rtl {
@@ -245,7 +245,7 @@
             .e-de-char-fmt-btn-left button:not(:last-child),
             .e-de-insert-del-cell button:not(:last-child),
             .e-de-align-text button:not(:last-child) {
-                border-right: 1.7px solid rgba($border-light);
+                border-right: 1.7px solid rgbaChange($border-light);
                 background: $de-prop-btn-bg-color;
             }
         }
@@ -255,13 +255,13 @@
         .e-de-insert-del-cell .e-rtl button:not(:first-child),
         .e-de-align-text .e-rtl button:not(:first-child)
         {
-            border-right: 1px solid rgba($border-light) !important;
+            border-right: 1px solid rgbaChange($border-light) !important;
         }
         .e-de-grp-btn-ctnr {
             .e-de-ctnr-group-btn {
                 .e-de-prop-font-button {
                     background: $de-prop-btn-bg-color;
-                    border: 1px solid rgba($border-light) !important;
+                    border: 1px solid rgbaChange($border-light) !important;
                 }
             }
             .e-de-ctnr-group-btn-top {

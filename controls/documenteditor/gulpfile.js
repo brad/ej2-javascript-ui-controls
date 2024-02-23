@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 
 /**
  * Build ts and scss files
@@ -28,6 +29,7 @@ gulp.task('scripts', function(done) {
 gulp.task('styles', function() {
     var sass = require('gulp-sass');
     return gulp.src(['./**/*.scss', '!./node_modules/**/*.scss'], { base: './' })
+        .pipe(plumber())
         .pipe(sass({
             outputStyle: 'expanded',
             includePaths: './node_modules/@syncfusion/'

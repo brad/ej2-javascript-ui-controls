@@ -1,6 +1,6 @@
 @include export-module('document-editor-container-material3-icons') {
   .e-de-ctnr-close::before {
-    color: rgba($icon-color);
+    color: rgbaChange($icon-color);
     content: '\e7e7';
     font-size: 16px;
   }

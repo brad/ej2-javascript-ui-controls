@@ -27,7 +27,8 @@
 		"@syncfusion/ej2-navigations": "*",
 		"@syncfusion/ej2-office-chart": "*",
 		"@syncfusion/ej2-popups": "*",
-		"@syncfusion/ej2-splitbuttons": "*"
+		"@syncfusion/ej2-splitbuttons": "*",
+		"gulp-plumber": "^1.2.1"
 	},
 	"devDependencies": {
 		"@types/chai": "^3.4.28",

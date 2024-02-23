@@ -4827,11 +4827,7 @@ export class Editor {
                 result = result.replace('xmlns="http://www.w3.org/1999/xhtml"', '');
                 this.pasteAjax(result, '.html');
             } else if (textContent !== null && textContent !== '') {
-                this.selection.currentPasteAction = 'TextOnly';
-                this.pasteContents(textContent);
-                this.applyPasteOptions(this.currentPasteOptions, true);
-                this.copiedContent = undefined;
-                this.documentHelper.editableDiv.innerHTML = '';
+                this.pasteAjax(textContent, '.txt');
             } else if (Browser.info.name !== 'msie' && clipbordData.items !== undefined && clipbordData.items.length !== 0) {
                 for (let m: number = 0; m < clipbordData.items.length; m++) {
                     let item: DataTransferItem = clipbordData.items[m];
