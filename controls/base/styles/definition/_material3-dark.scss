@@ -150,19 +150,19 @@ $opacity14: .14 !default;
 $opacity16: .16 !default;
 
 //Material custom variable
-$surface1: linear-gradient(0deg, rgbaChange($primary, $opacity5), rgbaChange($primary, $opacity5)), rgbaChange($surface) !default;
-$surface2: linear-gradient(0deg, rgbaChange($primary, $opacity8), rgbaChange($primary, $opacity8)), rgbaChange($surface) !default;
-$surface3: linear-gradient(0deg, rgbaChange($primary, $opacity11), rgbaChange($primary, $opacity11)), rgbaChange($surface) !default;
-$surface4: linear-gradient(0deg, rgbaChange($primary, $opacity12), rgbaChange($primary, $opacity12)), rgbaChange($surface) !default;
-$surface5: linear-gradient(0deg, rgbaChange($primary, $opacity14), rgbaChange($primary, $opacity14)), rgbaChange($surface) !default;
-$surface6: linear-gradient(0deg, rgbaChange($primary, $opacity16), rgbaChange($primary, $opacity16)), rgbaChange($surface) !default;
+$surface1: linear-gradient(0deg, rgba($primary, $opacity5), rgba($primary, $opacity5)), rgba($surface) !default;
+$surface2: linear-gradient(0deg, rgba($primary, $opacity8), rgba($primary, $opacity8)), rgba($surface) !default;
+$surface3: linear-gradient(0deg, rgba($primary, $opacity11), rgba($primary, $opacity11)), rgba($surface) !default;
+$surface4: linear-gradient(0deg, rgba($primary, $opacity12), rgba($primary, $opacity12)), rgba($surface) !default;
+$surface5: linear-gradient(0deg, rgba($primary, $opacity14), rgba($primary, $opacity14)), rgba($surface) !default;
+$surface6: linear-gradient(0deg, rgba($primary, $opacity16), rgba($primary, $opacity16)), rgba($surface) !default;
 
 //shadow
-$level1: 0 1px 3px 1px rgbaChange(0, 0, 0, .15), 0 1px 2px 0 rgbaChange(0, 0, 0, .3);
-$level2: 0 2px 6px 2px rgbaChange(0, 0, 0, .15), 0 1px 2px 0 rgbaChange(0, 0, 0, .3);
-$level3: 0 1px 3px 0 rgbaChange(0, 0, 0, .3), 0 4px 8px 3px rgbaChange(0, 0, 0, .15);
-$level4: 0 2px 3px 0 rgbaChange(0, 0, 0, .3), 0 6px 10px 4px rgbaChange(0, 0, 0, .15);
-$level5: 0 4px 4px 0 rgbaChange(0, 0, 0, .3), 0 8px 12px 6px rgbaChange(0, 0, 0, .15);
+$level1: 0 1px 3px 1px rgba(0, 0, 0, .15), 0 1px 2px 0 rgba(0, 0, 0, .3);
+$level2: 0 2px 6px 2px rgba(0, 0, 0, .15), 0 1px 2px 0 rgba(0, 0, 0, .3);
+$level3: 0 1px 3px 0 rgba(0, 0, 0, .3), 0 4px 8px 3px rgba(0, 0, 0, .15);
+$level4: 0 2px 3px 0 rgba(0, 0, 0, .3), 0 6px 10px 4px rgba(0, 0, 0, .15);
+$level5: 0 4px 4px 0 rgba(0, 0, 0, .3), 0 8px 12px 6px rgba(0, 0, 0, .15);
 
 $primary:  $primary !default;
 $primary-text-color: $on-primary !default;
@@ -196,21 +196,21 @@ $content-bg-color-alt3: $surface3 !default;
 $content-bg-color-alt4: $surface4 !default;
 $content-bg-color-alt5: $surface5 !default;
 $content-bg-color-alt6: $surface6 !default;
-$content-bg-color-hover: rgbaChange($on-surface, $opacity5) !default;
-$content-bg-color-pressed: rgbaChange($on-surface, $opacity8) !default;
-$content-bg-color-focus: rgbaChange($on-surface, $opacity4) !default;
+$content-bg-color-hover: rgba($on-surface, $opacity5) !default;
+$content-bg-color-pressed: rgba($on-surface, $opacity8) !default;
+$content-bg-color-focus: rgba($on-surface, $opacity4) !default;
 $content-bg-color-selected: $primary-light !default;
 $content-bg-color-dragged: $primary-light !default;
 $content-bg-color-disabled: $white !default;
 $flyout-bg-color: $surface3 !default;
-$flyout-bg-color-hover: rgbaChange($on-surface, $opacity5) !default;
-$flyout-bg-color-pressed: rgbaChange($on-surface, $opacity8) !default;
-$flyout-bg-color-selected: rgbaChange($primary-container, .65) !default;
-$flyout-bg-color-focus: rgbaChange($on-surface, $opacity4) !default;
-$overlay-bg-color: rgbaChange($scrim, .5) !default;
-$table-bg-color-hover: rgbaChange($on-surface, $opacity5) !default;
-$table-bg-color-pressed: rgbaChange($on-surface, $opacity8) !default;
-$table-bg-color-selected: rgbaChange($primary-container, .65) !default;
+$flyout-bg-color-hover: rgba($on-surface, $opacity5) !default;
+$flyout-bg-color-pressed: rgba($on-surface, $opacity8) !default;
+$flyout-bg-color-selected: rgba($primary-container, .65) !default;
+$flyout-bg-color-focus: rgba($on-surface, $opacity4) !default;
+$overlay-bg-color: rgba($scrim, .5) !default;
+$table-bg-color-hover: rgba($on-surface, $opacity5) !default;
+$table-bg-color-pressed: rgba($on-surface, $opacity8) !default;
+$table-bg-color-selected: rgba($primary-container, .65) !default;
 
 // all theme common color
 $colorpicker-gradient-1: #f00 !default;
@@ -238,14 +238,14 @@ $content-text-color-pressed: $content-text-color !default;
 $content-text-color-focus: $content-text-color !default;
 $content-text-color-selected: $content-text-color !default;
 $content-text-color-dragged: $content-text-color !default;
-$content-text-color-disabled: rgbaChange($on-surface, .38) !default;
+$content-text-color-disabled: rgba($on-surface, .38) !default;
 $placeholder-text-color: $outline !default;
 $flyout-text-color: $content-text-color !default;
 $flyout-text-color-hover: $content-text-color !default;
 $flyout-text-color-pressed: $content-text-color !default;
 $flyout-text-color-selected: $content-text-color !default;
 $flyout-text-color-focus: $content-text-color !default;
-$flyout-text-color-disabled: rgbaChange($on-surface, .38) !default;
+$flyout-text-color-disabled: rgba($on-surface, .38) !default;
 $table-text-color-hover: $content-text-color !default;
 $table-text-color-pressed: $content-text-color !default;
 $table-text-color-selected: $content-text-color !default;
@@ -254,13 +254,13 @@ $table-text-color-selected: $content-text-color !default;
 $icon-color: $on-surface-variant !default;
 $icon-color-hover: $on-surface !default;
 $icon-color-pressed: $on-surface-variant !default;
-$icon-color-disabled: rgbaChange($on-surface-variant, .38) !default;
+$icon-color-disabled: rgba($on-surface-variant, .38) !default;
 
 // border-color
 $border-light: $outline-variant !default;
 $border: $outline !default;
 $border-alt: $on-surface-variant !default;
-$border-dark: rgbaChange($on-surface, .38) !default;
+$border-dark: rgba($on-surface, .38) !default;
 $border-hover: $border-light !default;
 $border-pressed: $border-light !default;
 $border-focus: $border-light !default;
@@ -279,23 +279,23 @@ $tooltip-border: $inverse-surface;
 $tooltip-text-color: $inverse-on-surface !default;
 
 // shadow
-$shadow: 0 .8px 16px rgbaChange($black, .15) !default;
+$shadow: 0 .8px 16px rgba($black, .15) !default;
 $shadow-sm: $level1 !default;
 $shadow-md: $level2 !default;
 $shadow-lg: $level3 !default;
 $shadow-xl: $level4 !default;
 $shadow-2xl: $level5 !default;
-$shadow-inner: inset 0 1px 2px rgbaChange($black, .075) !default;
-$shadow-none: 0 0 rgbaChange($black, 0) !default;
+$shadow-inner: inset 0 1px 2px rgba($black, .075) !default;
+$shadow-none: 0 0 rgba($black, 0) !default;
 
 $shadow-focus-ring1: 0 0 0 1px #000000, 0 0 0 3px #ffffff !default;
-$shadow-focus-ring2: 0 0 0 1px rgbaChange($black, .95) !default;
-$primary-shadow-focus: 0 0 0 4px rgbaChange($primary, .5) !default;
-$secondary-shadow-focus: 0 0 0 4px rgbaChange($secondary, .5) !default;
-$success-shadow-focus: 0 0 0 4px rgbaChange($success, .5) !default;
-$danger-shadow-focus: 0 0 0 4px rgbaChange($danger, .5) !default;
-$info-shadow-focus: 0 0 0 4px rgbaChange($info, .5) !default;
-$warning-shadow-focus: 0 0 0 4px rgbaChange($warning, .5) !default;
+$shadow-focus-ring2: 0 0 0 1px rgba($black, .95) !default;
+$primary-shadow-focus: 0 0 0 4px rgba($primary, .5) !default;
+$secondary-shadow-focus: 0 0 0 4px rgba($secondary, .5) !default;
+$success-shadow-focus: 0 0 0 4px rgba($success, .5) !default;
+$danger-shadow-focus: 0 0 0 4px rgba($danger, .5) !default;
+$info-shadow-focus: 0 0 0 4px rgba($info, .5) !default;
+$warning-shadow-focus: 0 0 0 4px rgba($warning, .5) !default;
 
 // fontfamily
 $font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif !default;
@@ -345,107 +345,107 @@ $font-weight-bolder:          bolder !default;
 // Secondary-button
 
 $secondary-bg-color: $content-bg-color-alt1 !default;
-$secondary-border-color: linear-gradient(0deg, rgbaChange($primary, $opacity5), rgbaChange($primary, $opacity5)) !default;
+$secondary-border-color: linear-gradient(0deg, rgba($primary, $opacity5), rgba($primary, $opacity5)) !default;
 $secondary-text-color: $on-surface !default;
-$secondary-bg-color-hover: linear-gradient(0deg, rgbaChange($secondary-text-color, $opacity8), rgbaChange($secondary-text-color, $opacity8)), rgbaChange($content-bg-color) !default;
-$secondary-border-color-hover: linear-gradient(0deg, rgbaChange($secondary-text-color, $opacity8), rgbaChange($secondary-text-color, $opacity8)) !default;
+$secondary-bg-color-hover: linear-gradient(0deg, rgba($secondary-text-color, $opacity8), rgba($secondary-text-color, $opacity8)), rgba($content-bg-color) !default;
+$secondary-border-color-hover: linear-gradient(0deg, rgba($secondary-text-color, $opacity8), rgba($secondary-text-color, $opacity8)) !default;
 $secondary-text-color-hover: $secondary-text-color !default;
-$secondary-bg-color-pressed:linear-gradient(0deg, rgbaChange($secondary-text-color, $opacity12), rgbaChange($secondary-text-color, $opacity12)), rgbaChange($content-bg-color) !default;
-$secondary-border-color-pressed: linear-gradient(0deg, rgbaChange($secondary-text-color, $opacity12), rgbaChange($secondary-text-color, $opacity12)) !default;
+$secondary-bg-color-pressed:linear-gradient(0deg, rgba($secondary-text-color, $opacity12), rgba($secondary-text-color, $opacity12)), rgba($content-bg-color) !default;
+$secondary-border-color-pressed: linear-gradient(0deg, rgba($secondary-text-color, $opacity12), rgba($secondary-text-color, $opacity12)) !default;
 $secondary-text-color-pressed: $secondary-text-color !default;
 $secondary-bg-color-focus: $secondary-bg-color-hover !default;
 $secondary-border-color-focus: $secondary-border-color-hover !default;
 $secondary-text-color-focus: $secondary-text-color-hover !default;
-$secondary-bg-color-disabled: rgbaChange($secondary, .12) !default;
-$secondary-border-color-disabled: rgbaChange($secondary, 0) !default;
-$secondary-text-color-disabled: rgbaChange($on-surface, .38) !default;
+$secondary-bg-color-disabled: rgba($secondary, .12) !default;
+$secondary-border-color-disabled: rgba($secondary, 0) !default;
+$secondary-text-color-disabled: rgba($on-surface, .38) !default;
 
 // Primary-button
 
 $primary-bg-color: $primary !default;
 $primary-border-color: $primary !default;
 $primary-text: $primary-text-color !default;
-$primary-bg-color-hover: linear-gradient(0deg, rgbaChange($primary-text, $opacity8), rgbaChange($primary-text, $opacity8)), rgbaChange($primary-bg-color) !default;
+$primary-bg-color-hover: linear-gradient(0deg, rgba($primary-text, $opacity8), rgba($primary-text, $opacity8)), rgba($primary-bg-color) !default;
 $primary-border-color-hover: $primary-bg-color-hover !default;
 $primary-text-hover: $primary-text !default;
-$primary-bg-color-pressed: linear-gradient(0deg, rgbaChange($primary-text, $opacity12), rgbaChange($primary-text, $opacity12)), rgbaChange($primary-bg-color) !default;
+$primary-bg-color-pressed: linear-gradient(0deg, rgba($primary-text, $opacity12), rgba($primary-text, $opacity12)), rgba($primary-bg-color) !default;
 $primary-border-color-pressed: $primary-bg-color-pressed !default;
 $primary-text-pressed: $primary-text-color !default;
 $primary-bg-color-focus: $primary-bg-color-hover !default;
 $primary-border-color-focus: $primary-border-color-hover !default;
 $primary-text-focus: $primary-text !default;
-$primary-bg-color-disabled: rgbaChange($secondary, .12) !default;
-$primary-border-color-disabled: rgbaChange($secondary, 0) !default;
-$primary-text-disabled: rgbaChange($on-surface, .38) !default;
+$primary-bg-color-disabled: rgba($secondary, .12) !default;
+$primary-border-color-disabled: rgba($secondary, 0) !default;
+$primary-text-disabled: rgba($on-surface, .38) !default;
 
 // Success-button
 
 $success-bg-color: $success !default;
 $success-border-color: $success !default;
 $success-text: $black !default;
-$success-bg-color-hover: linear-gradient(0deg, rgbaChange($success-text, $opacity8), rgbaChange($success-text, $opacity8)), rgbaChange($success-bg-color) !default;
+$success-bg-color-hover: linear-gradient(0deg, rgba($success-text, $opacity8), rgba($success-text, $opacity8)), rgba($success-bg-color) !default;
 $success-border-color-hover: $success-bg-color-hover !default;
 $success-text-hover: $success-text !default;
-$success-bg-color-pressed: linear-gradient(0deg, rgbaChange($success-text, $opacity12), rgbaChange($success-text, $opacity12)), rgbaChange($success-bg-color) !default;
+$success-bg-color-pressed: linear-gradient(0deg, rgba($success-text, $opacity12), rgba($success-text, $opacity12)), rgba($success-bg-color) !default;
 $success-border-color-pressed: $success-bg-color-pressed !default;
 $success-text-pressed: $success-text !default;
 $success-bg-color-focus: $success-bg-color-hover !default;
 $success-border-color-focus: $success-border-color-hover !default;
 $success-text-focus: $success-text !default;
-$success-bg-color-disabled: rgbaChange($secondary, .12) !default;
+$success-bg-color-disabled: rgba($secondary, .12) !default;
 $success-border-color-disabled: $success-bg-color-disabled !default;
-$success-text-disabled: rgbaChange($on-surface, .38) !default;
+$success-text-disabled: rgba($on-surface, .38) !default;
 
 // Warning-button
 $warning-bg-color: $warning !default;
 $warning-border-color: $warning !default;
 $warning-text: $black !default;
-$warning-bg-color-hover: linear-gradient(0deg, rgbaChange($warning-text, $opacity8), rgbaChange($warning-text, $opacity8)), rgbaChange($warning-bg-color) !default;
+$warning-bg-color-hover: linear-gradient(0deg, rgba($warning-text, $opacity8), rgba($warning-text, $opacity8)), rgba($warning-bg-color) !default;
 $warning-border-color-hover: $warning-bg-color-hover !default;
 $warning-text-hover: $warning-text !default;
-$warning-bg-color-pressed: linear-gradient(0deg, rgbaChange($warning-text, $opacity12), rgbaChange($warning-text, $opacity12)), rgbaChange($warning-bg-color) !default;
+$warning-bg-color-pressed: linear-gradient(0deg, rgba($warning-text, $opacity12), rgba($warning-text, $opacity12)), rgba($warning-bg-color) !default;
 $warning-border-color-pressed: $warning-bg-color-pressed !default;
 $warning-text-pressed: $warning-text !default;
 $warning-bg-color-focus: $warning-bg-color-hover !default;
 $warning-border-color-focus: $warning-border-color-hover !default;
 $warning-text-focus: $warning-text !default;
-$warning-bg-color-disabled: rgbaChange($secondary, .12) !default;
+$warning-bg-color-disabled: rgba($secondary, .12) !default;
 $warning-border-color-disabled: $warning-bg-color-disabled !default;
-$warning-text-disabled: rgbaChange($on-surface, .38) !default;
+$warning-text-disabled: rgba($on-surface, .38) !default;
 
 // danger-button
 $danger-bg-color: $danger !default;
 $danger-border-color: $danger !default;
 $danger-text: $black !default;
-$danger-bg-color-hover: linear-gradient(0deg, rgbaChange($danger-text, $opacity8), rgbaChange($danger-text, $opacity8)), rgbaChange($danger-bg-color) !default;
+$danger-bg-color-hover: linear-gradient(0deg, rgba($danger-text, $opacity8), rgba($danger-text, $opacity8)), rgba($danger-bg-color) !default;
 $danger-border-color-hover: $danger-bg-color-hover !default;
 $danger-text-hover: $danger-text !default;
-$danger-bg-color-pressed: linear-gradient(0deg, rgbaChange($danger-text, $opacity12), rgbaChange($danger-text, $opacity12)), rgbaChange($danger-bg-color) !default;
+$danger-bg-color-pressed: linear-gradient(0deg, rgba($danger-text, $opacity12), rgba($danger-text, $opacity12)), rgba($danger-bg-color) !default;
 $danger-border-color-pressed: $danger-bg-color-pressed !default;
 $danger-text-pressed: $danger-text !default;
 $danger-bg-color-focus: $danger-bg-color-hover !default;
 $danger-border-color-focus: $danger-border-color-hover !default;
 $danger-text-focus: $danger-text !default;
-$danger-bg-color-disabled: rgbaChange($secondary, .12) !default;
+$danger-bg-color-disabled: rgba($secondary, .12) !default;
 $danger-border-color-disabled: $danger-bg-color-disabled !default;
-$danger-text-disabled: rgbaChange($on-surface, .38) !default;
+$danger-text-disabled: rgba($on-surface, .38) !default;
 
 // Info-button
 $info-text: $black !default;
 $info-bg-color: $info !default;
 $info-border-color: $info-bg-color !default;
-$info-bg-color-hover: linear-gradient(0deg, rgbaChange($info-text, $opacity8), rgbaChange($info-text, $opacity8)), rgbaChange($info-bg-color) !default;
+$info-bg-color-hover: linear-gradient(0deg, rgba($info-text, $opacity8), rgba($info-text, $opacity8)), rgba($info-bg-color) !default;
 $info-border-color-hover: $info-bg-color-hover !default;
 $info-text-hover: $info-text !default;
-$info-bg-color-pressed: linear-gradient(0deg, rgbaChange($info-text, $opacity12), rgbaChange($info-text, $opacity12)), rgbaChange($info-bg-color) !default;
+$info-bg-color-pressed: linear-gradient(0deg, rgba($info-text, $opacity12), rgba($info-text, $opacity12)), rgba($info-bg-color) !default;
 $info-border-color-pressed: $info-bg-color-pressed !default;
 $info-text-pressed: $info-text !default;
 $info-bg-color-focus: $info-bg-color-hover !default;
 $info-border-color-focus: $info-border-color-hover !default;
 $info-text-focus: $info-text-hover !default;
-$info-bg-color-disabled: rgbaChange($secondary, .12) !default;
+$info-bg-color-disabled: rgba($secondary, .12) !default;
 $info-border-color-disabled: $info-bg-color-disabled !default;
-$info-text-disabled: rgbaChange($on-surface, .38) !default;
+$info-text-disabled: rgba($on-surface, .38) !default;
 
 //Outline button
 $primary-outline: $primary-bg-color !default;
@@ -484,8 +484,8 @@ $theme-name: 'Material3-dark' !default;
 
 //Diagram Palette color
 $diagram-palette-background: $inverse-surface !default;
-$diagram-palette-hover-background: rgbaChange($surface, .05) !default;
-$diagram-palette-selection-background: rgbaChange($surface, .12) !default;
+$diagram-palette-hover-background: rgba($surface, .05) !default;
+$diagram-palette-selection-background: rgba($surface, .12) !default;
 
 //M3 radius
 $shape-none:0 !default;
@@ -528,136 +528,136 @@ $chip-radius-bigger: $shape-small !default;
 //Message component
 
 //Message Default
-$msg-color: rgbaChange($on-surface) !default;
+$msg-color: rgba($on-surface) !default;
 $msg-bg-color: $content-bg-color-alt1 !default;
-$msg-border-color: linear-gradient(0deg, rgbaChange($primary, $opacity5), rgbaChange($primary, $opacity5)) !default;
-$msg-color-alt1: rgbaChange($on-surface) !default;
+$msg-border-color: linear-gradient(0deg, rgba($primary, $opacity5), rgba($primary, $opacity5)) !default;
+$msg-color-alt1: rgba($on-surface) !default;
 $msg-bg-color-alt1: $transparent !default;
-$msg-border-color-alt1: rgbaChange($outline) !default;
-$msg-color-alt2: rgbaChange($inverse-on-surface) !default;
-$msg-bg-color-alt2: rgbaChange($inverse-surface) !default;
-$msg-border-color-alt2: rgbaChange($inverse-surface) !default;
+$msg-border-color-alt1: rgba($outline) !default;
+$msg-color-alt2: rgba($inverse-on-surface) !default;
+$msg-bg-color-alt2: rgba($inverse-surface) !default;
+$msg-border-color-alt2: rgba($inverse-surface) !default;
 
-$msg-icon-color: rgbaChange($on-surface-variant) !default;
-$msg-icon-color-alt1: rgbaChange($on-surface-variant) !default;
-$msg-icon-color-alt2: rgbaChange($inverse-on-surface) !default;
+$msg-icon-color: rgba($on-surface-variant) !default;
+$msg-icon-color-alt1: rgba($on-surface-variant) !default;
+$msg-icon-color-alt2: rgba($inverse-on-surface) !default;
 
-$msg-close-icon-color: rgbaChange($icon-color) !default;
-$msg-close-icon-color-alt1: rgbaChange($icon-color) !default;
-$msg-close-icon-color-alt2: rgbaChange($inverse-on-surface) !default;
+$msg-close-icon-color: rgba($icon-color) !default;
+$msg-close-icon-color-alt1: rgba($icon-color) !default;
+$msg-close-icon-color-alt2: rgba($inverse-on-surface) !default;
 
 //Message success
-$msg-success-color: rgbaChange($on-success-container) !default;
-$msg-success-bg-color: rgbaChange($success-container) !default;
-$msg-success-border-color: rgbaChange($success-container) !default;
-$msg-success-color-alt1: rgbaChange($on-success-container) !default;
+$msg-success-color: rgba($on-success-container) !default;
+$msg-success-bg-color: rgba($success-container) !default;
+$msg-success-border-color: rgba($success-container) !default;
+$msg-success-color-alt1: rgba($on-success-container) !default;
 $msg-success-bg-color-alt1: $transparent !default;
-$msg-success-border-color-alt1: rgbaChange($success) !default;
-$msg-success-color-alt2: rgbaChange($on-success) !default;
-$msg-success-bg-color-alt2: rgbaChange($success) !default;
-$msg-success-border-color-alt2: rgbaChange($success) !default;
+$msg-success-border-color-alt1: rgba($success) !default;
+$msg-success-color-alt2: rgba($on-success) !default;
+$msg-success-bg-color-alt2: rgba($success) !default;
+$msg-success-border-color-alt2: rgba($success) !default;
 
-$msg-success-icon-color: rgbaChange($success) !default;
-$msg-success-icon-color-alt1: rgbaChange($on-success-container) !default;
-$msg-success-icon-color-alt2: rgbaChange($on-success) !default;
+$msg-success-icon-color: rgba($success) !default;
+$msg-success-icon-color-alt1: rgba($on-success-container) !default;
+$msg-success-icon-color-alt2: rgba($on-success) !default;
 
-$msg-success-close-icon-color: rgbaChange($icon-color) !default;
-$msg-success-close-icon-color-alt1: rgbaChange($icon-color) !default;
-$msg-success-close-icon-color-alt2: rgbaChange($on-success) !default;
+$msg-success-close-icon-color: rgba($icon-color) !default;
+$msg-success-close-icon-color-alt1: rgba($icon-color) !default;
+$msg-success-close-icon-color-alt2: rgba($on-success) !default;
 
 //Message danger
-$msg-danger-color: rgbaChange($on-error-container) !default;
-$msg-danger-bg-color: rgbaChange($error-container) !default;
-$msg-danger-border-color: rgbaChange($error-container) !default;
-$msg-danger-color-alt1: rgbaChange($on-error-container) !default;
+$msg-danger-color: rgba($on-error-container) !default;
+$msg-danger-bg-color: rgba($error-container) !default;
+$msg-danger-border-color: rgba($error-container) !default;
+$msg-danger-color-alt1: rgba($on-error-container) !default;
 $msg-danger-bg-color-alt1: $transparent !default;
-$msg-danger-border-color-alt1: rgbaChange($error) !default;
-$msg-danger-color-alt2: rgbaChange($on-error) !default;
-$msg-danger-bg-color-alt2: rgbaChange($error) !default;
-$msg-danger-border-color-alt2: rgbaChange($error) !default;
+$msg-danger-border-color-alt1: rgba($error) !default;
+$msg-danger-color-alt2: rgba($on-error) !default;
+$msg-danger-bg-color-alt2: rgba($error) !default;
+$msg-danger-border-color-alt2: rgba($error) !default;
 
-$msg-danger-icon-color: rgbaChange($error) !default;
-$msg-danger-icon-color-alt1: rgbaChange($on-error-container) !default;
-$msg-danger-icon-color-alt2: rgbaChange($on-error) !default;
+$msg-danger-icon-color: rgba($error) !default;
+$msg-danger-icon-color-alt1: rgba($on-error-container) !default;
+$msg-danger-icon-color-alt2: rgba($on-error) !default;
 
-$msg-danger-close-icon-color: rgbaChange($icon-color) !default;
-$msg-danger-close-icon-color-alt1: rgbaChange($icon-color) !default;
-$msg-danger-close-icon-color-alt2: rgbaChange($on-error) !default;
+$msg-danger-close-icon-color: rgba($icon-color) !default;
+$msg-danger-close-icon-color-alt1: rgba($icon-color) !default;
+$msg-danger-close-icon-color-alt2: rgba($on-error) !default;
 
 //Message warning
-$msg-warning-color: rgbaChange($on-warning-container) !default;
-$msg-warning-bg-color: rgbaChange($warning-container) !default;
-$msg-warning-border-color: rgbaChange($warning-container) !default;
-$msg-warning-color-alt1: rgbaChange($on-warning-container) !default;
+$msg-warning-color: rgba($on-warning-container) !default;
+$msg-warning-bg-color: rgba($warning-container) !default;
+$msg-warning-border-color: rgba($warning-container) !default;
+$msg-warning-color-alt1: rgba($on-warning-container) !default;
 $msg-warning-bg-color-alt1: $transparent !default;
-$msg-warning-border-color-alt1: rgbaChange($warning) !default;
-$msg-warning-color-alt2: rgbaChange($on-warning) !default;
-$msg-warning-bg-color-alt2: rgbaChange($warning) !default;
-$msg-warning-border-color-alt2: rgbaChange($warning) !default;
+$msg-warning-border-color-alt1: rgba($warning) !default;
+$msg-warning-color-alt2: rgba($on-warning) !default;
+$msg-warning-bg-color-alt2: rgba($warning) !default;
+$msg-warning-border-color-alt2: rgba($warning) !default;
 
-$msg-warning-icon-color: rgbaChange($warning) !default;
-$msg-warning-icon-color-alt1: rgbaChange($on-warning-container) !default;
-$msg-warning-icon-color-alt2: rgbaChange($on-warning) !default;
+$msg-warning-icon-color: rgba($warning) !default;
+$msg-warning-icon-color-alt1: rgba($on-warning-container) !default;
+$msg-warning-icon-color-alt2: rgba($on-warning) !default;
 
-$msg-warning-close-icon-color: rgbaChange($icon-color) !default;
-$msg-warning-close-icon-color-alt1: rgbaChange($icon-color) !default;
-$msg-warning-close-icon-color-alt2: rgbaChange($on-warning) !default;
+$msg-warning-close-icon-color: rgba($icon-color) !default;
+$msg-warning-close-icon-color-alt1: rgba($icon-color) !default;
+$msg-warning-close-icon-color-alt2: rgba($on-warning) !default;
 
 //Message Info
-$msg-info-color: rgbaChange($on-info-container) !default;
-$msg-info-bg-color: rgbaChange($info-container) !default;
-$msg-info-border-color: rgbaChange($info-container) !default;
-$msg-info-color-alt1: rgbaChange($on-info-container) !default;
+$msg-info-color: rgba($on-info-container) !default;
+$msg-info-bg-color: rgba($info-container) !default;
+$msg-info-border-color: rgba($info-container) !default;
+$msg-info-color-alt1: rgba($on-info-container) !default;
 $msg-info-bg-color-alt1: $transparent !default;
-$msg-info-border-color-alt1: rgbaChange($info) !default;
-$msg-info-color-alt2: rgbaChange($on-info) !default;
-$msg-info-bg-color-alt2: rgbaChange($info) !default;
-$msg-info-border-color-alt2: rgbaChange($info) !default;
+$msg-info-border-color-alt1: rgba($info) !default;
+$msg-info-color-alt2: rgba($on-info) !default;
+$msg-info-bg-color-alt2: rgba($info) !default;
+$msg-info-border-color-alt2: rgba($info) !default;
 
-$msg-info-icon-color: rgbaChange($info) !default;
-$msg-info-icon-color-alt1: rgbaChange($on-info-container) !default;
-$msg-info-icon-color-alt2: rgbaChange($on-info) !default;
+$msg-info-icon-color: rgba($info) !default;
+$msg-info-icon-color-alt1: rgba($on-info-container) !default;
+$msg-info-icon-color-alt2: rgba($on-info) !default;
 
-$msg-info-close-icon-color: rgbaChange($icon-color) !default;
-$msg-info-close-icon-color-alt1: rgbaChange($icon-color) !default;
-$msg-info-close-icon-color-alt2: rgbaChange($on-info) !default;
+$msg-info-close-icon-color: rgba($icon-color) !default;
+$msg-info-close-icon-color-alt1: rgba($icon-color) !default;
+$msg-info-close-icon-color-alt2: rgba($on-info) !default;
 
 //Appbar
 //Light
 $appbar-bg-color-alt1: $content-bg-color-alt2 !default;
-$appbar-color-alt1: rgbaChange($content-text-color) !default;
-$appbar-border-color-alt1: linear-gradient(0deg, rgbaChange($primary, $opacity8), rgbaChange($primary, $opacity8)) !default;
-$appbar-hover-bg-color-alt1: rgbaChange(0, 0, 0, .05) !default;
+$appbar-color-alt1: rgba($content-text-color) !default;
+$appbar-border-color-alt1: linear-gradient(0deg, rgba($primary, $opacity8), rgba($primary, $opacity8)) !default;
+$appbar-hover-bg-color-alt1: rgba(0, 0, 0, .05) !default;
 
 //Dark
-$appbar-bg-color-alt2: rgbaChange($inverse-surface) !default;
-$appbar-color-alt2: rgbaChange($inverse-on-surface) !default;
-$appbar-border-color-alt2: rgbaChange($inverse-surface) !default;
-$appbar-hover-bg-color-alt2: rgbaChange(255, 255, 255, .08) !default;
+$appbar-bg-color-alt2: rgba($inverse-surface) !default;
+$appbar-color-alt2: rgba($inverse-on-surface) !default;
+$appbar-border-color-alt2: rgba($inverse-surface) !default;
+$appbar-hover-bg-color-alt2: rgba(255, 255, 255, .08) !default;
 
 //shadow
-$appbar-bottom-shadow: 0 1.6px 3.6px rgbaChange(0, 0, 0, .13), 0 .3px .9px rgbaChange(0, 0, 0, .1) !default;
-$appbar-top-shadow: 0 -1.6px 3.6px rgbaChange(0, 0, 0, .13), 0 -.3px .9px rgbaChange(0, 0, 0, .1) !default;
+$appbar-bottom-shadow: 0 1.6px 3.6px rgba(0, 0, 0, .13), 0 .3px .9px rgba(0, 0, 0, .1) !default;
+$appbar-top-shadow: 0 -1.6px 3.6px rgba(0, 0, 0, .13), 0 -.3px .9px rgba(0, 0, 0, .1) !default;
 
 //rating
 $rating-selected-color: $primary !default;
 $rating-unrated-color: $content-bg-color-alt3 !default;
-$rating-selected-disabled-color: rgbaChange($on-surface, .24) !default;
-$rating-unrated-disabled-color: rgbaChange($on-surface, .08) !default;
-$rating-selected-hover-color: darken-color(rgbaChange($primary), 5%) !default;
-$rating-unrated-hover-color: darken-color(rgbaChange($primary), 10%) !default;
-$rating-pressed-color: darken-color(rgbaChange($primary), 10%) !default;
+$rating-selected-disabled-color: rgba($on-surface, .24) !default;
+$rating-unrated-disabled-color: rgba($on-surface, .08) !default;
+$rating-selected-hover-color: darken-color(rgba($primary), 5%) !default;
+$rating-unrated-hover-color: darken-color(rgba($primary), 10%) !default;
+$rating-pressed-color: darken-color(rgba($primary), 10%) !default;
 
 //skeleton
-$skeleton-wave-color: rgbaChange(73, 69, 79, 1) !default;
+$skeleton-wave-color: rgba(73, 69, 79, 1) !default;
 
 //spreadsheet
-$splitbtn-right-border: linear-gradient(to right, rgbaChange($content-bg-color, 1) 25%, rgbaChange($border-light, 1) 75%) 1 !default;
-$splitbtn-right-border-rtl: linear-gradient(to left, rgbaChange($content-bg-color, 1) 25%, rgbaChange($border-light, 1) 75%) 1 !default;
-$splitbtn-right-border-vertical: linear-gradient(to bottom, rgbaChange($content-bg-color, 1) 25%, rgbaChange($border-light, 1) 75%) 1 !default;
+$splitbtn-right-border: linear-gradient(to right, rgba($content-bg-color, 1) 25%, rgba($border-light, 1) 75%) 1 !default;
+$splitbtn-right-border-rtl: linear-gradient(to left, rgba($content-bg-color, 1) 25%, rgba($border-light, 1) 75%) 1 !default;
+$splitbtn-right-border-vertical: linear-gradient(to bottom, rgba($content-bg-color, 1) 25%, rgba($border-light, 1) 75%) 1 !default;
 
 //gantt
-$gantt-taskbar-color: linear-gradient(0deg, rgbaChange($primary, .75), rgbaChange($primary, .75)), rgbaChange($content-bg-color) !default;
+$gantt-taskbar-color: linear-gradient(0deg, rgba($primary, .75), rgba($primary, .75)), rgba($content-bg-color) !default;
 
 $grey-white: #fff !default;
 $base-font: #000 !default;
